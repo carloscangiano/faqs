@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "oswald-light";
+    src: url("/../../assets/oswald-light.ttf") format('truetype');    
+}
+@font-face {
+    font-family: "oswald-bold";
+    src: url("/../../assets/oswald-bold.ttf") format('truetype');
+}
+@font-face {
+    font-family: "oswald-regular";
+    src: url("/../../assets/oswald-regular.ttf") format('truetype');
+}
+h2 {
+    font-family: "oswald-bold";
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #000000;
+}
+.big-bar {
+    height: 30px;
+    width: 100%;
+    background-color: black;
+    margin-top: 28px;    
+}
