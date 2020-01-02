@@ -1,16 +1,16 @@
-<div class="container" *ngFor="let faq of data; let i = index;">
+<div class="container" *ngFor="let faq of faqsService.listFaqs.faqs; let i = index;">
     <div class="panel-group" [attr.id]="'accordion_' + i" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default">
             <div class="panel-heading p-3" role="tab" [attr.id]="'accordion_' + i">
                 <a class="collapsed row" role="button" title="" data-toggle="collapse" [attr.data-parent]="'#accordion_' + i" [attr.href]="'#collapseOne_' + i" aria-expanded="" aria-controls="collapse0">
                     <div class="panel-title col-md-1">
                         <p class="id">
-                            Q{{faq._id}}
+                            Q{{faq.id}}
                         </p> 
                     </div>
                     <div class="panel-title col-md-10">
                         <p class="title">
-                            {{faq.question}}
+                            {{faq.question}} 
                         </p>
                     </div>
                     <div class="panel-title col-md-1">
